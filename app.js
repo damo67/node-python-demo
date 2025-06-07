@@ -4,7 +4,7 @@ const { spawn } = require('child_process');
 const py = spawn('python', ['hello.py']);
 
 py.stdout.on('data', (data) => {
-  console.log(`Python says a few things: ${data}`);
+  console.log(`Python says a coupla things: ${data}`);
 });
 
 py.stderr.on('data', (data) => {
